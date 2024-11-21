@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import uniqueId from 'lodash/uniqueId';
-import { RichText } from '@smp-distribution/capi-types';
+import { RichText } from '../capi-types';
 import stylizrInstance from './stylizer';
 
 export interface ListProps {

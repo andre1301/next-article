@@ -5,7 +5,7 @@ import moment from 'moment-timezone';
 import { Article } from '../article/[id]/types/article';
 import { ImageUrls } from '../article/[id]/types/image';
 import SectionEntity from '../article/[id]/types/section-entity';
-import { LeadTextComponent } from '@smp-distribution/capi-types';
+import { LeadTextComponent } from '../article/[id]/capi-types';
 import {
   isLeadTextComponent,
   isImageComponent,

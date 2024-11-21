@@ -2,7 +2,7 @@ import {
   TextComponent,
   SubheadingComponent,
   TableComponent
-} from '@smp-distribution/capi-types';
+} from '../capi-types';
 import ImageComponent from './image';
 
 export default interface Question {

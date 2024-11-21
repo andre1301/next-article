@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "@aftonbladet/stylizr": "^1.1.1",
-    "@smp-distribution/capi-types": "^3.0.0",
     "classnames": "^2.5.1",
     "lodash": "^4.17.21",
     "moment-timezone": "^0.5.46",

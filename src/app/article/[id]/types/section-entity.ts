@@ -1,4 +1,4 @@
-import type { SectionEntity as SectionEntityCapi } from '@smp-distribution/capi-types';
+import type { SectionEntity as SectionEntityCapi } from '../capi-types';
 
 export default interface SectionEntity
   extends Omit<SectionEntityCapi, 'parent'> {

@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { isTextBlock, isListBlock } from '../types/guards';
-import { RichTextBlock, Markup, RichText } from '@smp-distribution/capi-types';
+import { RichTextBlock, Markup, RichText } from '../capi-types';
 import UnorderedList from './UnorderedList';
 import OrderedList from './OrderedList';
 import s from '../Article.module.scss';

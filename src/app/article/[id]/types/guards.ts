@@ -10,7 +10,7 @@ import {
   SubheadingComponent,
   TargetMarkup,
   TableComponent
-} from '@smp-distribution/capi-types';
+} from '../capi-types';
 import isObject from 'lodash/isObject';
 import isString from 'lodash/isString';
 import deprecatedIntegrationComponent from './deprecated-integration';

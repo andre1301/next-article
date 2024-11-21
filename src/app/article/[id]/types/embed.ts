@@ -1,7 +1,7 @@
 import type {
   UrlComponent as UrlComponentCapi,
   UrlComponentData as UrlComponentDatatCapi
-} from '@smp-distribution/capi-types';
+} from '../capi-types';
 
 export interface UrlComponentData extends UrlComponentDatatCapi {
   embed: {

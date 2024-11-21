@@ -7,7 +7,7 @@ import type {
   Changes,
   AccessControl as AccessControlCapi,
   PromotionContent as PromotionContentCapi
-} from '@smp-distribution/capi-types';
+} from '../capi-types';
 import DeprecatedIntegrationComponent from './deprecated-integration';
 import ImageComponent, { ImageAsset } from './image';
 import SalesWidget from './sales-widget';

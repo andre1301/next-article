@@ -1,0 +1,33 @@
+{
+  "name": "@smp-distribution/capi-types",
+  "version": "3.0.0",
+  "description": "Type definitions for CONTENT-API responses, based on Iris types & Content-api-docs",
+  "keywords": [
+    "capi, content, api, types"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.schibsted.io/smp-distribution/common-node-libs.git",
+    "directory": "packages/capi-types"
+  },
+  "license": "UNLICENSED",
+  "contributors": [
+    "ole-martin.grotterud@schibsted.com",
+    "gustav.utterheim@schibsted.com"
+  ],
+  "types": "./types/index.d.ts",
+  "files": [
+    "types/*"
+  ],
+  "scripts": {
+    "prebuild": "npm run clean",
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "prepublishOnly": "npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "gitHead": "26cab3e7084f7b27dcb98a87e996db3bbe0bae04"
+}

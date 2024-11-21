@@ -60,5 +60,4 @@ export interface BodyContent {
 }
 export interface ArticlePropTypes {
   params: Promise<{ id: string }>
-  
 }

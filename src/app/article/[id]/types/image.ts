@@ -1,7 +1,7 @@
 import type {
   ImageComponent as ImageComponentCapi,
   ImageAsset as ImageAssetCapi
-} from '@smp-distribution/capi-types';
+} from '../capi-types';
 
 export type ImageUrls = { url: string; width: number; height: number };
 

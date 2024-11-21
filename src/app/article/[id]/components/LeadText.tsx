@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { TextBlock } from '@smp-distribution/capi-types';
+import { TextBlock } from '../capi-types';
 import s from '../Article.module.scss';
 import stylizrInstance from './stylizer';
 
