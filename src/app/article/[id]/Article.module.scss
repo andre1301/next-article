@@ -1,0 +1,1418 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+   @import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700&display=swap');
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+ $font-app-primary: "Poppins", sans-serif;
+
+//  html {
+//   line-height: 1.15; /* 1 */
+//   -webkit-text-size-adjust: 100%; /* 2 */
+// }
+
+// /* Sections
+//    ========================================================================== */
+
+// /**
+//  * Remove the margin in all browsers.
+//  */
+
+// img {
+//   border-style: none;
+// }
+
+// /* Forms
+//    ========================================================================== */
+
+// /**
+//  * 1. Change the font styles in all browsers.
+//  * 2. Remove the margin in Firefox and Safari.
+//  */
+
+// button,
+// input,
+// optgroup,
+// select,
+// textarea {
+//   font-family: inherit; /* 1 */
+//   font-size: 100%; /* 1 */
+//   line-height: 1.15; /* 1 */
+//   margin: 0; /* 2 */
+// }
+
+// /**
+//  * Show the overflow in IE.
+//  * 1. Show the overflow in Edge.
+//  */
+
+// button,
+// input { /* 1 */
+//   overflow: visible;
+// }
+
+// /**
+//  * Remove the inheritance of text transform in Edge, Firefox, and IE.
+//  * 1. Remove the inheritance of text transform in Firefox.
+//  */
+
+// button,
+// select { /* 1 */
+//   text-transform: none;
+// }
+
+
+$product: "se";
+
+$color-primary: #8012ea;
+
+$color-grey-darker: #313030;
+$color-grey-dark: #8c8b8a;
+$color-grey-medium: #aaa;
+$color-grey-light: #d8d8d8;
+
+$sections-images-ratio: "9/21";
+
+/* Color styles */
+$color-clickable-tag-web: #d9d9d9ff;
+$color-core-primary: #8012eaff;
+$color-core-primary-dark-1: #6700e3ff;
+$color-core-primary-light-1: #924dffff;
+$color-core-primary-light-2: #bda5ffff;
+$color-core-primary-light-3: #cfbdffff;
+$color-core-primary-light-4: #e0d7ffff;
+$color-core-green: #0eaf85ff;
+$color-core-green-dark-2: #026f5eff;
+$color-core-green-dark-1: #009780ff;
+$color-core-green-light-1: #1ec291ff;
+$color-core-green-light-2: #a8dfc8ff;
+$color-core-green-light-3: #c7e6d7ff;
+$color-core-green-light-4: #e4f3ecff;
+$color-core-salmon: #ff806cff;
+$color-core-salmon-dark-1: #da6d60ff;
+$color-core-salmon-light-1: #ffa080ff;
+$color-core-salmon-light-2: #ffbc96ff;
+$color-core-salmon-light-3: #ffd5c7ff;
+$color-core-yellow: #ffce4bff;
+$color-core-yellow-dark-1: #deac00ff;
+$color-core-yellow-light-1: #ffe888ff;
+$color-core-yellow-light-2: #fff0b3ff;
+$color-core-yellow-light-3: #fff6cfff;
+$color-core-pink: #ff5378ff;
+$color-core-pink-dark-1: #d43353ff;
+$color-core-pink-light-1: #ff8086ff;
+$color-core-pink-light-2: #f5aaaaff;
+$color-core-pink-light-3: #ffc7c1ff;
+$color-core-pink-light-4: #ffd5d6ff;
+$color-core-grey: #757677ff;
+$color-core-grey-dark-1: #373737ff;
+$color-core-grey-light-1: #b2b2b2ff;
+$color-core-grey-light-2: #c6c6c6ff;
+$color-core-grey-light-3: #d9d9d9ff;
+$color-core-grey-light-4: #edededff;
+$color-core-grey-light-5: #f4f4f4ff;
+$color-core-black: #000000ff;
+$color-core-white: #ffffffff;
+$color-button-primary-background-default: #8012eaff;
+$color-button-primary-background-pressed: #6700e3ff;
+$color-button-primary-background-hovered: #9941eeff;
+$color-button-primary-background-disabled: #d9d9d9ff;
+$color-button-primary-contents-default: #ffffffff;
+$color-button-primary-contents-pressed: #ffffffff;
+$color-button-primary-contents-hovered: #ffffffff;
+$color-button-primary-contents-disabled: #757677ff;
+$color-button-primary-outline-border-default: #bda5ffff;
+$color-button-primary-outline-border-pressed: #bda5ffff;
+$color-button-primary-outline-border-hovered: #bda5ffff;
+$color-button-primary-outline-border-disabled: #d9d9d9ff;
+$color-button-primary-outline-contents-default: #6700e3ff;
+$color-button-primary-outline-contents-hovered: #6700e3ff;
+$color-button-primary-outline-contents-pressed: #6700e3ff;
+$color-button-primary-outline-contents-disabled: #757677ff;
+$color-button-primary-outline-background-pressed: #cfbdffff;
+$color-button-primary-outline-background-hovered: #e0d7ffff;
+$color-button-secondary-outline-border-default: #bda5ffff;
+$color-button-secondary-outline-border-disabled: #c6c6c6ff;
+$color-button-secondary-outline-border-pressed: #bda5ffff;
+$color-button-secondary-outline-border-hovered: #bda5ffff;
+$color-button-secondary-outline-contents-default: #6700e3ff;
+$color-button-secondary-outline-contents-disabled: #b2b2b2ff;
+$color-button-secondary-outline-contents-pressed: #6700e3ff;
+$color-button-secondary-outline-contents-hovered: #6700e3ff;
+$color-button-secondary-outline-background-pressed: #cfbdffff;
+$color-button-secondary-outline-background-hovered: #e0d7ffff;
+$color-button-secondary-background-default: #e0d7ffff;
+$color-button-secondary-background-hovered: #cfbdffff;
+$color-button-secondary-background-disabled: #edededff;
+$color-button-secondary-background-pressed: #bda5ffff;
+$color-button-secondary-contents-default: #6700e3ff;
+$color-button-secondary-contents-pressed: #6700e3ff;
+$color-button-secondary-contents-hovered: #6700e3ff;
+$color-button-secondary-contents-disabled: #b2b2b2ff;
+$color-button-navigation-background-default: #e0d7ffff;
+$color-button-navigation-background-pressed: #bda5ffff;
+$color-button-navigation-background-hovered: #cfbdffff;
+$color-button-navigation-background-disabled: #edededff;
+$color-button-navigation-contents-default: #6700e3ff;
+$color-button-navigation-contents-pressed: #6700e3ff;
+$color-button-navigation-contents-hovered: #6700e3ff;
+$color-button-navigation-contents-disabled: #b2b2b2ff;
+$color-button-card-border-default: #8012eaff;
+$color-button-card-background-default: #ffffffff;
+$color-button-log-icon-default: #6700e3ff;
+$color-button-log-icon-checked: #6700e3ff;
+$color-button-log-text-default: #6700e3ff;
+$color-button-illustrated-illustration-background: #f4f4f4ff;
+$color-button-illustrated-illustration-contents: #8012eaff;
+$color-button-card-navigation-contents: #8012eaff;
+$color-button-icon-button-contents: #757677ff;
+$color-action-navigation: #8012eaff;
+$color-action-icon-default: #8012eaff;
+$color-action-icon-disabled: #8012ea33;
+$color-action-icon-secondary: #8012eaff;
+$color-action-icon-tertiary: #757677ff;
+$color-text-primary: #000000ff;
+$color-text-hint: #757677ff;
+$color-text-secondary: #757677ff;
+$color-text-tertiary: #b2b2b2ff;
+$color-text-error: #d43353ff;
+$color-text-primary-inversed: #ffffffff;
+$color-text-primary-disabled: #b2b2b2ff;
+$color-status-tag-info-contents: #000000ff;
+$color-status-tag-info-background: #c7e6d7ff;
+$color-status-tag-label-contents: #ffffffff;
+$color-status-tag-label-background: #373737ff;
+$color-status-tag-alert-contents: #000000ff;
+$color-status-tag-alert-background: #ffd5c7ff;
+$color-status-tag-weight-content: #000000ff;
+$color-status-tag-weight-background: #ffffffff;
+$color-tag-clickable-contents-default: #000000ff;
+$color-tag-clickable-contents-disabled: #b2b2b2ff;
+$color-tag-clickable-border-default: #ffd5c7ff;
+$color-tag-clickable-background-disabled: #edededff;
+$color-tag-clickable-background-selected: #ffd5c7ff;
+$color-tag-recipe-contents: #000000ff;
+$color-tag-recipe-background: #ffd5c7ff;
+$color-tag-label-content: #000000ff;
+$color-tag-label-background: #c7e6d7ff;
+$color-tag-new-content: #000000ff;
+$color-tag-new-background: #a8dfc8ff;
+$color-tag-web-clickable-contents-default: #6700e3ff;
+$color-tag-web-clickable-contents-disabled: #b2b2b2ff;
+$color-tag-web-clickable-border-default: #bda5ffff;
+$color-tag-web-clickable-background-disabled: #edededff;
+$color-tag-web-clickable-background-selected: #bda5ffff;
+$color-accent-icon: #8012eaff;
+$color-accent-default: #8012eaff;
+$color-accent-log: #8012eaff;
+$color-accent-progress-indicator: #8012eaff;
+$color-accent-check: #009780ff;
+$color-accent-feedback-positive: #0eaf85ff;
+$color-accent-feedback-negative: #ff806cff;
+$color-accent-getting-started-icon: #8012eaff;
+$color-accent-getting-started-icon-background: #ffffffff;
+$color-accent-partial-goal-ongoing: #8012eaff;
+$color-accent-partial-goal-achieved: #0eaf85ff;
+$color-accent-partial-goal-remaining: #b2b2b2ff;
+$color-dropdown-background-default: #ffffffff;
+$color-dropdown-border-default: #b2b2b2ff;
+$color-dropdown-border-expanded: #cfbdffff;
+$color-background-light-translucent: #ffffffa6;
+$color-background-light-solid: #ffffffff;
+$color-background-color-default: #c7e6d7ff;
+$color-text-field-background-default: #ffffffff;
+$color-text-field-border-default: #b2b2b2ff;
+$color-text-field-border-focused: #cfbdffff;
+$color-search-field-i-os-icons: #757677ff;
+$color-search-field-background-default: #ffffffff;
+$color-bottom-navigation-accent: #8012eaff;
+$color-bottom-navigation-default: #757677ff;
+$color-bottom-navigation-divider: #edededff;
+$color-bottom-navigation-hovered: #000000ff;
+$color-progress-bar-background-default: #ffffffff;
+$color-progress-bar-background-secondary: #edededff;
+$color-progress-bar-background-story: #ffffff99;
+$color-progress-bar-background-tertiary: #b2b2b2ff;
+$color-progress-bar-check-content: #ffffffff;
+$color-progress-bar-check-background: #8012eaff;
+$color-progress-bar-progress-default: #8012eaff;
+$color-progress-bar-progress-story-dark: #37373780;
+$color-progress-bar-progress-story-light: #ffffffff;
+$color-macronutrients-fat: #ffbc96ff;
+$color-macronutrients-protein: #1ec291ff;
+$color-macronutrients-carbohydrates: #ffe888ff;
+$color-macronutrients-alcohol: #ff806cff;
+$color-macronutrients-energy: #757677ff;
+$color-info-toast-background: #00000080;
+$color-web-floating-background: #f4f4f4ff;
+$color-web-pill-tab-contents-default: #000000ff;
+$color-web-pill-tab-contents-selected: #ffffffff;
+$color-web-pill-tab-background-hovered: #edededff;
+$color-web-pill-tab-background-default: #ffffffff;
+$color-web-pill-tab-background-selected: #8012eaff;
+$color-web-underline-tab-contents-default: #000000ff;
+$color-web-underline-tab-contents-selected: #6700e3ff;
+$color-web-underline-tab-underline-selected: #8012eaff;
+$color-web-underline-tab-underline-default: #c6c6c6ff;
+$color-web-underline-tab-background-hovered: #edededff;
+$color-web-expand-button-contents: #8012eaff;
+$color-web-switch-track-checked: #8012eaff;
+$color-web-switch-track-default: #edededff;
+$color-web-switch-thumb-checked: #ffffffff;
+$color-web-switch-thumb-default: #ffffffff;
+$color-web-divider-primary: #d9d9d9ff;
+$color-web-divider-secondary: #b2b2b2ff;
+$color-web-modal-header-background: #8012eaff;
+$color-web-background-section: #e4f3ecff;
+$color-web-background-secondary: #f4f4f4ff;
+$color-web-background-default: #ffffffff;
+$color-web-background-tertiary: #f4f4f4ff;
+$color-web-button-log-text-default: #8012eaff;
+$color-web-button-filter-background-default: #edededff;
+$color-web-button-filter-background-selected: #8012eaff;
+$color-web-button-filter-background-hovered: #c6c6c6ff;
+$color-web-button-filter-contents-default: #000000ff;
+$color-web-button-filter-contents-selected: #ffffffff;
+$color-web-button-hero-background-default: #d7c5ffff;
+$color-web-button-hero-background-hovered: #d7c5ffff;
+$color-web-button-hero-contents-hovered: #8012eaff;
+$color-web-button-hero-contents-default: #8012eaff;
+$color-web-button-footer-ad-background-default: #ffffffff;
+$color-web-button-footer-ad-background-hovered: #d7c5ffff;
+$color-web-button-footer-ad-contents-default: #8012eaff;
+$color-web-button-log-kcal-border-default: #ffffffff;
+$color-web-button-log-kcal-contents-default: #ffffffff;
+$color-web-button-log-kcal-background-hovered: #924dffff;
+$color-web-button-popover-background-default: #ffffffff;
+$color-web-button-popover-border-default: #757677ff;
+$color-web-button-popover-contents-default: #757677ff;
+$color-web-link-default: #8012eaff;
+$color-web-link-article-default: #0172f0ff;
+$color-web-header-selection-indicator: #8012eaff;
+$color-web-header-background-default: #ffffffff;
+$color-web-header-background-hovered: #f4f4f4ff;
+$color-web-header-text-default: #000000ff;
+$color-web-header-text-selected: #8012eaff;
+$color-web-header-icon-default: #000000ff;
+$color-web-header-icon-selected: #8012eaff;
+$color-web-header-new-label-background-default: #ff806cff;
+$color-web-header-new-label-contents-default: #ffffffff;
+$color-web-footer-social-network-logo-default: #bda5ffff;
+$color-web-search-field-border-default: #b2b2b2ff;
+$color-web-footer-ad-background-default: #8012eaff;
+$color-web-footer-ad-text-default: #ffffffff;
+$color-web-step-header-icon-default: #6700e3ff;
+$color-web-step-header-icon-active: #ffffffff;
+$color-web-step-header-icon-background-default: #ffffffff;
+$color-web-step-header-icon-background-active: #8012eaff;
+$color-web-step-header-icon-border-default: #bda5ffff;
+$color-web-step-header-icon-border-active: #8012eaff;
+$color-web-popover-background-default: #ffffffff;
+$color-web-popover-contents-default: #000000ff;
+$color-web-popover-header-background-default: #edededff;
+$color-web-getting-started-icon-default: #8012eaff;
+$color-web-getting-started-icon-background-default: #edededff;
+$color-web-text-field-share-background: #e0d7ff80;
+$color-web-text-field-validation-background: #edededff;
+$color-web-campaign-message-background: #c7e6d7ff;
+$color-web-campaign-message-content: #026f5eff;
+$color-web-campaign-focus-border: #026f5eff;
+$color-web-campaign-focus-badge: #026f5eff;
+$color-web-campaign-focus-content: #ffffffff;
+$color-web-illustration-background: #c7e6d7ff;
+$color-web-illustration-content: #026f5eff;
+$color-web-text-primary: #000000ff;
+$color-web-text-secondary: #757677ff;
+$color-web-text-headline: #373737ff;
+$color-web-option-content-default: #000000ff;
+$color-web-option-content-wrong: #ffffffff;
+$color-web-option-content-correct: #ffffffff;
+$color-web-option-background-default: #e0d7ffff;
+$color-web-option-background-hover: #cfbdffff;
+$color-web-option-background-wrong: #d43353ff;
+$color-web-option-background-correct: #0eaf85ff;
+$color-web-option-background-selected: #cfbdffff;
+$color-web-option-background-fact: #ffffffff;
+$color-web-option-border-wrong: #ffc7c1ff;
+$color-web-option-border-correct: #1ec291ff;
+$color-web-option-icon-content-default: #6700e3ff;
+$color-web-option-icon-content-selected: #ffffffff;
+$color-web-option-icon-content-correct: #0eaf85ff;
+$color-web-option-icon-content-wrong: #d43353ff;
+$color-web-option-icon-background-default: #ffffffff;
+$color-web-option-icon-background-selected: #8012eaff;
+$color-i-os-tab-background-default: #8012eaff;
+$color-i-os-tab-background-selected: #ffffffff;
+$color-i-os-tab-contents-default: #ffffffff;
+$color-i-os-tab-contents-selected: #8012eaff;
+$color-i-os-switch-track-checked: #8012eaff;
+$color-i-os-switch-track-default: #edededff;
+$color-i-os-switch-thumb-checked: #ffffffff;
+$color-i-os-switch-thumb-default: #ffffffff;
+$color-i-os-tutorial-hint-background: #8012eaff;
+$color-i-os-tutorial-hint-contents: #ffffffff;
+$color-picker-background: #8012eaff;
+$color-picker-text: #ffffffff;
+$color-picker-small-int-border: #bda5ffff;
+$color-picker-calendar-accent: #8012eaff;
+$color-picker-calendar-selection-today: #ffffffff;
+$color-android-top-tab-contents-default: #000000ff;
+$color-android-top-tab-contents-selected: #6700e3ff;
+$color-android-top-tab-underline-selected: #00000033;
+$color-android-top-tab-underline-default: #c6c6c6ff;
+$color-android-top-tab-background-pressed: #924dffff;
+$color-android-switch-thumb-checked: #8012eaff;
+$color-android-switch-thumb-default: #ffffffff;
+$color-android-switch-track-checked: #bda5ffff;
+$color-android-switch-track-default: #757677ff;
+$color-android-tutorial-hint-background: #757677ff;
+$color-android-popup-accent: #8012eaff;
+$color-checkbox-accent-checked: #8012eaff;
+$color-checkbox-accent-default: #757677ff;
+$color-fast-log-accent: #8012eaff;
+$color-fast-log-background-default-hovered: #8012ea33;
+$color-fast-log-background-checked-hovered: #6700e3ff;
+$color-star-rating-default: #ff806cff;
+$color-star-goal-default: #0eaf85ff;
+$color-star-action-default: #ff806cff;
+$color-star-own-rating-default: #8012eaff;
+$color-star-own-rating-inactive: #757677ff;
+$color-placeholder-image: #b2b2b2ff;
+$color-placeholder-text: #b2b2b2ff;
+$color-apps-divider-default: #b2b2b2ff;
+$color-apps-divider-medium: #c6c6c6ff;
+$color-badge-accent: #8012eaff;
+$color-badge-text: #000000ff;
+$color-kcal-track-progress-default: #8012eaff;
+$color-kcal-track-progress-warning: #ff806cff;
+$color-kcal-track-background-default: #ffffffff;
+$color-kcal-track-background-warning: #924dffff;
+$color-text-button-contents-default: #8012eaff;
+$color-text-button-contents-secondary: #8012eaff;
+$color-slider-accent: #8012eaff;
+$color-slider-background-pressed: #8012ea33;
+$color-slider-track-active: #8012eaff;
+$color-slider-track-inactive: #d9d9d9ff;
+$color-slider-thumb-core: #8012eaff;
+$color-slider-thumb-outer: #e6d0fbff;
+$color-page-indicator-default: #ffffffff;
+$color-page-indicator-selected: #8012eaff;
+$color-page-indicator-logbook-default: #c6c6c6ff;
+$color-page-indicator-logbook-selected: #8012eaff;
+$color-chart-bar-default: #8012eaff;
+$color-chart-bar-secondary: #c6c6c6ff;
+$color-chart-bar-negative: #ff806cff;
+$color-chart-bar-tertiary: #000000ff;
+$color-chart-marker-background: #8012eaff;
+$color-chart-marker-contents: #ffffffff;
+$color-screen-scrim-solid: #373737ff;
+$color-screen-scrim-translucent: #3737374d;
+$color-plus-menu-background-default: #8012eaff;
+$color-plus-menu-background-pressed: #6700e3ff;
+$color-plus-menu-contents-default: #ffffffff;
+$color-tutorial-hint-background: #8012eaff;
+$color-tutorial-hint-contents: #ffffffff;
+$color-swipe-delete-background: #d43353ff;
+$color-swipe-delete-contents: #ffffffff;
+$color-scrim-light-app-bar: linear-gradient(
+  to bottom,
+  #00000000 0%,
+  #00000000 45.83%,
+  #00000000 100%
+);
+$color-info-box-alert-background: #ffd5c7ff;
+$color-info-box-alert-content: #000000ff;
+$color-info-box-info-background: #c7e6d7ff;
+$color-info-box-info-content: #000000ff;
+$color-info-box-tip-background: #c7e6d7ff;
+$color-info-box-tip-content: #026f5eff;
+$color-info-box-allergies-background: #f4f4f4ff;
+$color-info-box-allergies-contents: #000000ff;
+$color-info-box-default-content: #000000ff;
+$color-info-box-default-background: #f4f4f4ff;
+$color-mood-great-inactive: #3bf98dff;
+$color-mood-great-active: #00d85dff;
+$color-mood-great-border-default: #026f5eff;
+$color-mood-great-background-default: #d5ece1ff;
+$color-mood-good-inactive: #9cfdb6ff;
+$color-mood-good-active: #46fb76ff;
+$color-mood-good-border-default: #6700e3ff;
+$color-mood-good-background-default: #e0d7ffff;
+$color-mood-unsure-inactive: #e0f694ff;
+$color-mood-unsure-active: #f8e456ff;
+$color-mood-unsure-border-default: #a88200ff;
+$color-mood-unsure-background-default: #fff6cfff;
+$color-mood-bad-inactive: #fd8081ff;
+$color-mood-bad-active: #fd5658ff;
+$color-mood-bad-border-default: #d43353ff;
+$color-mood-bad-background-default: #ffd5d6ff;
+$color-mood-border-disabled: #b2b2b2ff;
+$color-mood-background-disabled: #f4f4f4ff;
+$color-illustration-large-contents: #026f5eff;
+$color-illustration-large-background: #a8dfc8ff;
+$color-illustration-small-contents: #026f5eff;
+$color-illustration-small-background: #c7e6d7ff;
+$color-illustration-inactive-content: #b2b2b2ff;
+$color-illustration-inactive-background: #edededff;
+$color-card-transparent-stroked-border: #ffffffff;
+$color-icon-static: #000000ff;
+$color-icon-check: #0eaf85ff;
+$color-icon-calendar-content: #0eaf85ff;
+$color-icon-calendar-background: #ffffffff;
+$color-icon-kcal-target-content: #026f5eff;
+$color-icon-kcal-target-background: #c7e6d7ff;
+$color-icon-result-generic: #009780ff;
+$color-icon-result-favorite: #8012eaff;
+$color-icon-result-own: #373737ff;
+$color-logged-status-icon-logged-background: #8012eaff;
+$color-logged-status-icon-logged-contents: #ffffffff;
+$color-logged-status-icon-empty-border: #e0d7ffff;
+$color-logged-status-icon-empty-contents: #6700e3ff;
+$color-logged-status-icon-empty-background: #e0d7ffff;
+$color-story-background-secondary: #c7e6d7ff;
+$color-story-background-primary: #cfbdffff;
+$color-story-icon-dont: #ff806cff;
+$color-story-icon-do: #0eaf85ff;
+$color-graph-bar-default: #54bba4ff;
+$color-graph-bar-inactive: #edededff;
+$color-graph-bar-protein-default: #46c9a2ff;
+$color-graph-bar-protein-background: #46c9a226;
+$color-graph-bar-fat-default: #fac4a6ff;
+$color-graph-bar-fat-background: #fac4a640;
+$color-graph-bar-carbs-default: #ffe166ff;
+$color-graph-bar-carbs-background: #ffe16640;
+$color-graph-gradient-start: #b4e0ceff;
+$color-graph-gradient-end: #ffffffff;
+$color-graph-label-default: #000000ff;
+$color-graph-label-protein: #009780ff;
+$color-graph-label-fat: #da6d60ff;
+$color-graph-label-carbs: #d7a601ff;
+$color-graph-badge-recommended-content: #ffffffff;
+$color-graph-badge-recommended-background: #026f5eff;
+$color-graph-badge-pointer-content: #ffffffff;
+$color-graph-badge-pointer-background: #026f5eff;
+$color-graph-badge-warning-content: #ffffffff;
+$color-graph-badge-warning-background: #000000ff;
+$color-graph-line-recommended: #026f5eff;
+$color-graph-line-default: #026f5eff;
+$color-graph-line-warning: #000000ff;
+$color-graph-line-y-protein: #009780ff;
+$color-graph-line-y-default: #026f5eff;
+$color-graph-line-y-fat: #da6d60ff;
+$color-graph-line-y-carbs: #deac00ff;
+$color-graph-marker-content: #000000ff;
+$color-graph-marker-background: #f4f4f4ff;
+$color-graph-marker-line: #c6c6c6ff;
+$color-graph-calendar-label: #757677ff;
+$color-graph-calendar-training: #026f5eff;
+$color-graph-calendar-star: #0eaf85ff;
+$color-graph-calendar-percent: #000000ff;
+$color-graph-calendar-inactive: #c6c6c6ff;
+$color-graph-calendar-check: #0eaf85ff;
+$color-graph-calendar-border: #026f5eff;
+$color-graph-calendar-background-primary: #e4f3ecff;
+$color-graph-calendar-background-secondary: #f4f4f4ff;
+// ----------------- temporary local variables
+$color-tag-label-badge-background: #373737ff;
+$color-tag-label-badge-contents: #ffffffff;
+$color-button-modal-header-contents-default: white;
+$color-button-modal-header-background-hovered: #924dff;
+$color-additional-offer-background: $color-core-green-dark-2;
+
+@mixin font-regular {
+  font-weight: 400;
+}
+
+@mixin font-medium {
+  font-weight: 500;
+}
+
+@mixin font-semi-bold {
+  font-weight: 600;
+}
+
+@mixin font-bold {
+  font-weight: 700;
+}
+
+@mixin font-regular-italic {
+  @include font-regular;
+
+  font-style: italic;
+}
+
+@mixin h1 {
+  @include font-bold;
+
+  font-size: 2.4rem;
+  line-height: 1.3;
+  margin: 0 auto 1.6rem;
+
+  @include breakpoint-medium-up {
+    font-size: 3.6rem;
+    margin-bottom: 2.4rem;
+  }
+
+  @include breakpoint-large-up {
+    font-size: 4.2rem;
+  }
+}
+
+@mixin h2 {
+  @include font-semi-bold;
+
+  font-size: 2rem;
+  line-height: 1.4;
+  margin: 0 auto 0.8rem;
+
+  @include breakpoint-medium-up {
+    @include font-bold;
+
+    font-size: 2.4rem;
+  }
+}
+
+@mixin h3 {
+  @include font-semi-bold;
+
+  font-size: 2.4rem;
+  line-height: 3rem;
+  margin: 0 0 1em;
+}
+
+@mixin h4 {
+  @include font-semi-bold;
+
+  font-size: 2rem;
+  line-height: 2.8rem;
+  margin: 0 0 1em;
+}
+
+@mixin h5 {
+  @include font-semi-bold;
+
+  font-size: 1.8rem;
+  margin: 0 0 1em;
+  line-height: 1.4;
+}
+
+@mixin p {
+  font-size: 1.6rem;
+  margin: 0 0 1em;
+}
+
+@mixin a {
+  color: $color-web-link-default;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: underline;
+  }
+}
+
+@mixin truncate {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@mixin text-25 {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@mixin text-20 {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@mixin text-18 {
+  font-size: 1.8rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@mixin text-16 {
+  font-size: 1.6rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@mixin text-14 {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@mixin text-13 {
+  font-size: 1.3rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@mixin text-12 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin: 0;
+}
+
+@mixin text-25-regular {
+  @include text-25;
+  @include font-regular;
+}
+
+@mixin text-20-regular {
+  @include text-20;
+  @include font-regular;
+}
+
+@mixin text-20-semi-bold {
+  @include text-20;
+  @include font-semi-bold;
+}
+
+@mixin text-18-regular {
+  @include text-18;
+  @include font-regular;
+}
+
+@mixin text-16-regular {
+  @include text-16;
+  @include font-regular;
+}
+
+@mixin text-16-medium {
+  @include text-16;
+  @include font-medium;
+}
+
+@mixin text-16-semi-bold {
+  @include text-16;
+  @include font-semi-bold;
+}
+
+@mixin text-14-regular {
+  @include text-14;
+  @include font-regular;
+}
+
+@mixin text-14-medium {
+  @include text-14;
+  @include font-medium;
+}
+
+@mixin text-14-semi-bold {
+  @include text-14;
+  @include font-semi-bold;
+}
+
+@mixin text-14-semi-bold-caps {
+  @include text-14-semi-bold;
+
+  text-transform: uppercase;
+}
+
+@mixin text-13-medium {
+  @include text-13;
+  @include font-medium;
+}
+
+@mixin text-13-medium-caps {
+  @include text-13-medium;
+
+  text-transform: uppercase;
+}
+
+@mixin text-12-regular {
+  @include text-12;
+  @include font-regular;
+}
+
+@mixin text-12-medium {
+  @include text-12;
+  @include font-medium;
+}
+
+@mixin text-12-semi-bold {
+  @include text-12;
+  @include font-semi-bold;
+}
+
+@mixin text-12-semi-bold-caps {
+  @include text-12-medium;
+  @include font-semi-bold;
+
+  text-transform: uppercase;
+}
+
+@mixin title {
+  @include font-bold;
+
+  margin: 0;
+}
+
+@mixin title-48 {
+  @include title;
+
+  font-size: 4.8rem;
+  line-height: 1.1;
+}
+
+@mixin title-40 {
+  @include title;
+
+  font-size: 4rem;
+  line-height: 1.1;
+}
+
+@mixin title-35 {
+  @include title;
+
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+@mixin title-30 {
+  @include title;
+
+  font-size: 3rem;
+  line-height: 1.3;
+}
+
+@mixin title-25 {
+  @include title;
+
+  font-size: 2.5rem;
+  line-height: 1.3;
+}
+
+@mixin title-20 {
+  @include title;
+
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+@mixin title-18 {
+  @include title;
+
+  font-size: 1.8rem;
+  line-height: 1.3;
+}
+
+@mixin title-16 {
+  @include title;
+
+  font-size: 1.6rem;
+  line-height: 1.2;
+}
+
+@mixin responsive-title-1 {
+  @include title-25;
+
+  @include breakpoint-medium-up {
+    @include title-40;
+  }
+
+  @include breakpoint-large-up {
+    @include title-48;
+  }
+}
+
+@mixin responsive-title-2 {
+  @include title-25;
+
+  @include breakpoint-medium-up {
+    @include title-35;
+  }
+
+  @include breakpoint-large-up {
+    @include title-40;
+  }
+}
+
+@mixin responsive-title-3 {
+  @include title-25;
+
+  @include breakpoint-medium-up {
+    @include title-30;
+  }
+
+  @include breakpoint-large-up {
+    @include title-35;
+  }
+}
+
+@mixin responsive-title-4 {
+  @include title-20;
+
+  @include breakpoint-medium-up {
+    @include title-25;
+  }
+
+  @include breakpoint-large-up {
+    @include title-30;
+  }
+}
+
+@mixin responsive-title-5 {
+  @include title-20;
+
+  @include breakpoint-medium-up {
+    @include title-20;
+  }
+
+  @include breakpoint-large-up {
+    @include title-25;
+  }
+}
+
+@mixin responsive-title-6 {
+  @include title-18;
+
+  @include breakpoint-medium-up {
+    @include title-18;
+  }
+
+  @include breakpoint-large-up {
+    @include title-20;
+  }
+}
+
+// scale factor from zeplin values
+$scale-factor: 0.13rem;
+
+$spacing-tiny: 4 * $scale-factor;
+$spacing-small: 8 * $scale-factor;
+$spacing-medium: 12 * $scale-factor;
+$spacing-large: 16 * $scale-factor;
+
+$spacing-four: 0.4rem;
+$spacing-eight: 0.8rem;
+$spacing-twelve: 1.2rem;
+$spacing-sixteen: 1.6rem;
+$spacing-twentyfour: 2.4rem;
+$spacing-thirtytwo: 3.2rem;
+$spacing-forty: 4rem;
+$spacing-fortyeight: 4.8rem;
+$spacing-fiftysix: 5.6rem;
+$spacing-sixtyfour: 6.4rem;
+$spacing-seventytwo: 7.2rem;
+$spacing-eighty: 8rem;
+
+$desktop-max-width: 116.8rem;
+
+$breakpoint-smallest: 0;
+$breakpoint-smaller: 375px;
+$breakpoint-small: 480px;
+$breakpoint-medium: 768px;
+$breakpoint-large: 992px;
+$breakpoint-larger: 1200px;
+
+@mixin breakpoint-smallest-up {
+  @media (min-width: #{$breakpoint-smallest}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-smaller-up {
+  @media (min-width: #{$breakpoint-smaller}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-small-up {
+  @media (min-width: #{$breakpoint-small}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-medium-up {
+  @media (min-width: #{$breakpoint-medium}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-large-up {
+  @media (min-width: #{$breakpoint-large}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-larger-up {
+  @media (min-width: #{$breakpoint-larger}) {
+    @content;
+  }
+}
+
+// Down
+@mixin breakpoint-smallest-down {
+  @media (max-width: #{$breakpoint-smaller - 1px}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-smaller-down {
+  @media (max-width: #{$breakpoint-small - 1px}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-small-down {
+  @media (max-width: #{$breakpoint-medium - 1px}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-medium-down {
+  @media (max-width: #{$breakpoint-large - 1px}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-large-down {
+  @media (max-width: #{$breakpoint-larger - 1px}) {
+    @content;
+  }
+}
+
+// Only
+@mixin breakpoint-smallest-only {
+  @media (min-width: #{$breakpoint-smallest}) and (max-width: #{$breakpoint-smaller - 1px}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-smaller-only {
+  @media (min-width: #{$breakpoint-smaller}) and (max-width: #{$breakpoint-small - 1px}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-small-only {
+  @media (min-width: #{$breakpoint-small}) and (max-width: #{$breakpoint-medium - 1px}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-medium-only {
+  @media (min-width: #{$breakpoint-medium}) and (max-width: #{$breakpoint-large - 1px}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-large-only {
+  @media (min-width: #{$breakpoint-large}) and (max-width: #{$breakpoint-larger - 1px}) {
+    @content;
+  }
+}
+
+@mixin breakpoint-larger-only {
+  @media (min-width: #{$breakpoint-larger}) {
+    @content;
+  }
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+  @include breakpoint-medium-down {
+    background-color: $color-web-background-secondary;
+  }
+}
+
+  body {
+    @include font-regular;
+
+    display: block;
+    flex-direction: column;
+    font-family: $font-app-primary;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: $color-text-primary;
+    background-color: white;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    text-rendering: optimizeLegibility;
+    -webkit-user-drag: none;
+    -ms-content-zooming: none;
+    touch-action: manipulation;
+    text-size-adjust: none;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+
+    &.lock {
+      overflow: hidden;
+    }
+  }
+
+// h1 {
+//   @include h1;
+// }
+
+// h2 {
+//   @include h2;
+// }
+
+// h3 {
+//   @include h3;
+// }
+
+// h4 {
+//   @include h4;
+// }
+
+// h5 {
+//   @include h5;
+// }
+
+
+
+// strong {
+//   @include font-semi-bold;
+// }
+
+/* Lazyload global setting */
+
+.container {
+  max-width: 128rem;
+  margin: 0 auto;
+  padding: 0 $spacing-sixteen;
+  min-height: 100vh;
+
+  @include breakpoint-medium-up {
+    padding: 0 $spacing-twentyfour;
+  }
+
+  @include breakpoint-large-up {
+    padding: 0 $spacing-fiftysix;
+    min-height: 80vh;
+  }
+}
+
+.containerInner {
+  padding-bottom: $spacing-sixteen;
+
+  @include breakpoint-large-up {
+    width: 83%;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-bottom: 5rem;
+  }
+
+  a {
+    color: $color-web-link-article-default;
+  }
+}
+
+
+.title {
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 3.2rem;
+  margin: 1.7rem 0 2.5rem;
+  padding: 0 2rem;
+
+  @include breakpoint-medium-up {
+    font-size: 4.2rem;
+    line-height: 5rem;
+    padding: 0 2.5rem;
+  }
+
+  @include breakpoint-large-up {
+    padding: 0;
+  }
+}
+
+.imageWrapper {
+  margin: 0 2rem 1.2rem;
+
+  @include breakpoint-medium-up {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  @include breakpoint-large-up {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  img {
+    border-radius: 2rem;
+    min-height: 42vw;
+
+    @include breakpoint-large-up {
+      min-height: 320px;
+    }
+  }
+}
+
+.image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+
+  &--top {
+    opacity: 1;
+  }
+}
+
+.imageByline {
+  font-size: 1.1rem;
+  line-height: 1.45;
+  color: $color-grey-medium;
+  padding: 0.8rem 1rem 0;
+
+  @include breakpoint-medium-up {
+    font-size: 1.2rem;
+  }
+}
+
+.topLeadText {
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  margin: 1rem 0;
+  font-weight: 600;
+  padding: 0 2rem;
+
+  @include breakpoint-medium-up {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 0 2.5rem;
+  }
+
+  @include breakpoint-large-up {
+    padding: 0;
+  }
+}
+
+.bodyText {
+  font-size: 1.5rem;
+  line-height: 2.1rem;
+  margin: 1rem 0;
+  padding: 0 2rem;
+
+  @include breakpoint-medium-up {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 0 2.5rem;
+  }
+
+  @include breakpoint-large-up {
+    padding: 0;
+  }
+}
+
+.bodySubtitle {
+  @include title-20;
+
+  margin-top: 2.8rem;
+  margin-bottom: 0.5em;
+  padding: 0 2rem;
+
+  @include breakpoint-medium-up {
+    padding: 0 2.5rem;
+  }
+
+  @include breakpoint-large-up {
+    padding: 0;
+  }
+}
+
+@mixin factBoxBase {
+  font-weight: 400;
+  background-color: $color-web-background-secondary;
+  color: $color-text-primary;
+  padding: 2rem;
+  margin: 1rem 2rem;
+  border-radius: 2rem;
+
+  h2 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.4rem;
+    margin: 0 0 1rem;
+  }
+
+  ul,
+  ol {
+    padding: 0 1.8rem;
+  }
+}
+
+.summary {
+  @include factBoxBase;
+
+  margin: $spacing-thirtytwo 2rem;
+  padding: $spacing-twentyfour $spacing-sixteen;
+  border-radius: 2rem;
+
+  ul {
+    font-size: $spacing-sixteen;
+    line-height: 1.5;
+    margin: $spacing-eight 0;
+
+      display: block;
+      list-style-type: disc;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      padding-inline-start: 40px;
+  }
+
+  li {
+    margin-top: $spacing-eight;
+  }
+
+  .factboxTextBlock {
+    font-size: $spacing-sixteen;
+  }
+
+  @include breakpoint-medium-up {
+    margin: $spacing-thirtytwo 2.5rem;
+    padding: $spacing-thirtytwo $spacing-twentyfour;
+  }
+
+  @include breakpoint-large-up {
+    margin: $spacing-forty 0;
+  }
+}
+
+.factbox {
+  @include factBoxBase;
+
+  position: relative;
+
+  @include breakpoint-medium-up {
+    max-width: 40%;
+    display: inline-block;
+    float: right;
+    margin: 0 2rem 2rem;
+  }
+
+  @include breakpoint-large-up {
+    border-radius: 0.8rem;
+    margin: 0 0 2rem 2rem;
+  }
+}
+
+.factboxTextBlock {
+  margin: $spacing-eight 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.factboxDisclaimerBlock {
+  font-size: 1.4rem;
+  font-style: italic;
+  margin-top: $spacing-eight;
+
+  mark {
+    background-color: $color-web-background-secondary;
+    color: $color-text-primary;
+    text-decoration: underline;
+  }
+}
+
+.authors {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  padding-top: 1.4rem;
+  border-top: 0.1rem solid $color-web-divider-primary;
+  clear: both;
+  margin: 1.4rem 2rem 0;
+
+  @include breakpoint-medium-up {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    margin: 2rem 2.5rem 0;
+  }
+
+  @include breakpoint-large-up {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &TitleByline {
+    border: 0;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.videoWrapper {
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.factboxBody {
+  @include breakpoint-medium-up {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    position: relative;
+  }
+}
+
+.titleByline {
+  color: $color-grey-dark;
+  padding: 0 2rem;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+
+  @include breakpoint-medium-up {
+    padding: 0 2.5rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  @include breakpoint-large-up {
+    padding: 0;
+  }
+}
+
+.disclaimer {
+  margin: 1.6rem 2rem;
+
+  @include breakpoint-medium-up {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+
+  @include breakpoint-large-up {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
