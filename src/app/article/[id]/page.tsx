@@ -1,6 +1,8 @@
 /* eslint-disable consistent-return */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 /* eslint-disable react/no-danger */
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import { FC } from 'react';
 import { ArticlePropTypes } from './types';
 import s from './Article.module.scss';

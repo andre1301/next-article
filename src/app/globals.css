@@ -1,0 +1,34 @@
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 62.5%;
+
+}
+
+body {
+
+  display: block;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: white;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-user-drag: none;
+  -ms-content-zooming: none;
+  touch-action: manipulation;
+  text-size-adjust: none;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+
+  &.lock {
+    overflow: hidden;
+  }
+}

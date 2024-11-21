@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { FactComponent } from './capi-types';
+import { FactComponent } from '../capi-types';
 import s from '../Article.module.scss';
 import TextComponent from './TextComponent';
 

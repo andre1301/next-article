@@ -13,11 +13,6 @@ export const SMALL_MEDIA = 'screen and (max-width: 767px)';
 export const MEDIUM_MEDIA =
   'screen and (max-width: 991px) and (min-width: 768px)';
 export const LARGE_MEDIA = 'screen and (min-width: 992px)';
-
-const blankPixel =
-  'data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==';
-const LAZY_CLASS = 'lazyload';
-
 const Image: FC<ImageComponent> = ({
   byline: { title } = {},
   caption: { value: captionValue } = {},
